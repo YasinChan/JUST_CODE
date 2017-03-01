@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .loading2 {
+            margin: 60px auto;
+            height: 80px;
+            width: 80px;
+            border: 10px solid rgba(102, 102, 102, 0.2);
+            border-top: 10px solid #666;
+            border-radius: 50%;
+            animation: 1s load linear infinite;
+        }
+        
+        @keyframes load {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="loading2"></div>
+</body>
+
+</html>
