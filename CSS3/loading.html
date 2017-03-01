@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .loading {
+            margin: 40px auto;
+            width: 10px;
+            height: 60px;
+            background: #666;
+            position: relative;
+            animation: 1s load infinite;
+        }
+        
+        .loading:after {
+            content: '';
+            width: 10px;
+            height: 60px;
+            background: #666;
+            position: absolute;
+            left: -15px;
+            animation: 1s load infinite;
+            animation-delay: -0.16s;
+        }
+        
+        .loading:before {
+            content: '';
+            width: 10px;
+            height: 60px;
+            background: #666;
+            position: absolute;
+            left: 15px;
+            animation: 1s load infinite;
+            animation-delay: 0.16s;
+        }
+        
+        @keyframes load {
+            0% {
+                height: 40px;
+                box-shadow: #666 0 -0;
+            }
+            50% {
+                height: 60px;
+                box-shadow: #666 0 -20px;
+            }
+            100% {
+                height: 40px;
+                box-shadow: #666 0 -0;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="loading"></div>
+</body>
+
+</html>
