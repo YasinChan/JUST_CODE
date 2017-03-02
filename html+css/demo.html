@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .weekly_newsletter_v2 {
+            margin: 0 auto;
+            width: 640px;
+            height: 1536px;
+            background-color: #ffffff;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-top: 24px;
+        }
+        
+        .koko_logo {
+            width: 128px;
+            height: 128px;
+        }
+        
+        .Hello-Username {
+            margin: 0 auto;
+            width: 480px;
+            height: 28px;
+            font-family: Georgia;
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: normal;
+            text-align: center;
+            color: #5e2447;
+            position: relative;
+        }
+        
+        .USERS-AROUND-YOU {
+            margin-top: 24px;
+            height: 16px;
+            font-family: Lora;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            text-align: center;
+            color: #5e2447;
+            position: relative;
+        }
+        
+        .USERS-AROUND-YOU:after {
+            position: absolute;
+            content: '';
+            left: 40px;
+            top: 8px;
+            background-color: #ebe6e8;
+            width: 200px;
+            height: 1px;
+        }
+        
+        .USERS-AROUND-YOU:before {
+            position: absolute;
+            content: '';
+            right: 40px;
+            top: 8px;
+            background-color: #ebe6e8;
+            width: 200px;
+            height: 1px;
+        }
+        
+        .user {
+            margin: 40px auto;
+            width: 400px;
+            margin-top: -8px;
+        }
+        
+        .user:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .user .bound {
+            text-align: center;
+            width: 192px;
+            height: 190px;
+            /*border: 1px solid;*/
+            background-color: #ffffff;
+            margin-top: 40px;
+            float: left;
+            margin-right: 16px;
+        }
+        
+        .user .bound:nth-child(2),
+        .user .bound:nth-child(4) {
+            margin-right: -16px;
+        }
+        
+        .user .bound img {
+            width: 112px;
+            height: 112px;
+        }
+        
+        .user .bound>p {
+            margin-top: 12px;
+            height: 18px;
+            font-family: Georgia;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: #5e2447;
+        }
+        
+        .user .bound .btn {
+            margin-left: 32px;
+            margin-top: 10px;
+            width: 128px;
+            height: 32px;
+            border-radius: 4px;
+            background-color: #5e2447;
+        }
+        
+        .user .bound .btn>p {
+            font-family: arial;
+            font-size: 13px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 32px;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .bg {
+            margin: 0 auto;
+            width: 640px;
+            height: 536px;
+            background-color: #f9f7f7;
+        }
+        
+        .bg .GREAT-NEWS {
+            height: 16px;
+            font-family: Georgia;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            text-align: center;
+            color: #5e2447;
+            padding-top: 40px;
+        }
+        
+        .bg .Ive-been-looking-ar {
+            height: 24px;
+            font-family: arial;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: #7e8890;
+            padding-top: 32px;
+        }
+        
+        .bg-bound {
+            width: 448px;
+            height: 56px;
+            margin: 40px auto;
+        }
+        
+        .bg-bound>img {
+            display: inline-block;
+            height: 56px;
+            width: 56px;
+        }
+        
+        .bg-bound .name-birth {
+            vertical-align: text-bottom;
+            display: inline-block;
+            width: 248px;
+            height: 56px;
+            margin-left: 24px;
+            margin-right: 16px;
+        }
+        
+        .bg-bound .name-birth .username {
+            height: 34px;
+            font-family: Georgia;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 34px;
+            letter-spacing: normal;
+            color: #5e2447;
+        }
+        
+        .bg-bound .name-birth .birth {
+            height: 20px;
+            font-family: arial;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 20px;
+            letter-spacing: normal;
+            color: #7e8890;
+        }
+        
+        .bg-bound .View-profile- {
+            vertical-align: text-bottom;
+            display: inline-block;
+            height: 56px;
+            border-left: 1px solid #d6ccce;
+            font-family: arial;
+            font-size: 13px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 56px;
+            letter-spacing: normal;
+            text-align: right;
+            color: #5e2447;
+            padding-left: 7px;
+        }
+        
+        .followus {
+            margin: 40px auto;
+            text-align: center;
+            width: 124px;
+            height: 16px;
+            font-family: Georgia;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 16px;
+            letter-spacing: normal;
+            color: #5e2447;
+        }
+        
+        .icon {
+            text-align: center;
+        }
+        
+        .icon>img {
+            padding: 0 8px;
+            color: #ebe6e8;
+        }
+        
+        hr {
+            margin: 40px 0;
+        }
+        
+        .koko {
+            width: 464px;
+            font-family: arial;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 25px;
+            letter-spacing: normal;
+            text-align: center;
+            color: #c3b2b5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="weekly_newsletter_v2">
+
+        <div class="logo">
+            <img src="imgs/logo.png" class="koko_logo" alt="Img" title="Img">
+        </div>
+
+        <div class="Hello-Username">
+            Hello Username!
+        </div>
+
+        <div class="USERS-AROUND-YOU">
+            USERS AROUND YOU
+        </div>
+
+        <div class="user">
+
+            <div class="bound">
+                <img src="imgs/shibing.png" alt="Img" title="Img">
+                <p>HoTuYoung</p>
+                <div class="btn">
+                    <p>View profile ›</p>
+                </div>
+            </div>
+            <div class="bound">
+                <img src="imgs/makelei.png" alt="Img" title="Img">
+                <p>Mustafa</p>
+                <div class="btn">
+                    <p>View profile ›</p>
+                </div>
+            </div>
+            <div class="bound">
+                <img src="imgs/xiaomei.png" alt="Img" title="Img">
+                <p>DannyBochum</p>
+                <div class="btn">
+                    <p>View profile ›</p>
+                </div>
+            </div>
+            <div class="bound">
+                <img src="imgs/yuanshi.png" alt="Img" title="Img">
+                <p>Daniel</p>
+                <div class="btn">
+                    <p>View profile ›</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">
+
+            <div class="GREAT-NEWS">
+                <p>GREAT NEWS!</p>
+            </div>
+            <div class="Ive-been-looking-ar">
+                I've been looking around and found some exciting stuff about our tribe...
+            </div>
+            <div class="bg-bound">
+                <img src="imgs/shibing.png" alt="Img" title="Img">
+                <div class="name-birth">
+                    <div class="username">UserName</div>
+                    <div class="birth">Received most crushes this week!</div>
+                </div>
+                <div class="View-profile-">
+                    View profile ›
+                </div>
+            </div>
+            <div class="bg-bound">
+                <img src="imgs/xiaomei.png" alt="Img" title="Img">
+                <div class="name-birth">
+                    <div class="username">UserName</div>
+                    <div class="birth">Celebrates a birthday today!</div>
+                </div>
+                <div class="View-profile-">
+                    View profile ›
+                </div>
+            </div>
+            <div class="bg-bound">
+                <img src="imgs/makelei.png" alt="Img" title="Img">
+                <div class="name-birth">
+                    <div class="username">UserName</div>
+                    <div class="birth">Not a single crush so far.</div>
+                </div>
+                <div class="View-profile-">
+                    View profile ›
+                </div>
+            </div>
+            <div class="bg-bound">
+                <img src="imgs/yuanshi.png" alt="Img" title="Img">
+                <div class="name-birth">
+                    <div class="username">UserName</div>
+                    <div class="birth">You share a birthday!Coincidence?!</div>
+                </div>
+                <div class="View-profile-">
+                    View profile ›
+                </div>
+            </div>
+
+        </div>
+
+        <div class="followus">
+            — FOLLOW US —
+        </div>
+
+        <div class="icon">
+            <img src="imgs/icon-social-facebook.png" alt="Img" title="Img">
+            <img src="imgs/icon-social-instagram.png" alt="Img" title="Img">
+            <img src="imgs/icon-social-twitter.png" alt="Img" title="Img">
+            <img src="imgs/icon-social-pinterest.png" alt="Img" title="Img">
+            <img src="imgs/icon-social-googleplus.png" alt="Img" title="Img">
+        </div>
+
+        <hr>
+
+        <dic class="koko">
+            <p>
+                KOKO, Ideawise Limited, 130-6 Connaught Road, Central Hong Kong
+            </p>
+            <p>Too much? Unsubscribe here</p>
+        </dic>
+
+    </div>
+</body>
+
+</html>
