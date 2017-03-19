@@ -529,5 +529,27 @@ li {
     text-decoration: underline;
 }
 
+.fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.fixed a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid #35C8E6;
+    border-radius: 28px;
+    color: #fff;
+    background-color: #35C8E6;
+    transition: all 0.2s;
+}
+
+.fixed a:hover {
+    color: #35C8E6;
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0,189,229,.2);
+}
+
 
 
