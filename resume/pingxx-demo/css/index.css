@@ -156,31 +156,31 @@ li {
     0%{
         top:0;
     }
-    10%{
+    3%{
         top:-145px;
     }
     20%{
         top:-145px;
     }
-    30%{
+    23%{
         top: -290px;
     }
     40%{
         top: -290px;
     }
-    50%{
+    43%{
         top: -435px;
     }
     60%{
         top: -435px;
     }
-    70%{
+    63%{
         top: -580px;
     }
     80%{
         top: -580px;
     }
-    90%{
+    83%{
         top: -725px;
     }
     100%{
@@ -189,6 +189,7 @@ li {
 }
 
 .home .home-left .home-left-top h1 {
+    line-height: 75px;
     font-size: 54px;
     font-weight: 200;
 }
@@ -285,31 +286,31 @@ li {
     0%{
         left: 0;
     }
-    10%{
+    3%{
         left: -166px;
     }
     20%{
         left: -166px;
     }
-    30%{
+    23%{
         left: -332px;
     }
     40%{
         left: -332px;
     }
-    50%{
+    43%{
         left: -498px;
     }
     60%{
         left: -498px;
     }
-    70%{
+    63%{
         left: -664px;
     }
     80%{
         left: -664px;
     }
-    90%{
+    83%{
         left: -830px;
     }
     100%{
@@ -950,6 +951,7 @@ li {
     width: 40px;
     border: 1px solid #ccc;
     border-radius: 20px;
+    text-align: center;
 }
 
 .fixed-tab .wechat .x:hover {
@@ -959,8 +961,6 @@ li {
 
 .fixed-tab .wechat .x p {
     color: #666;
-    position: absolute;
-    top: -3px;
-    right: 8px;
+    line-height: 40px;
     font-size: 30px;
 }
