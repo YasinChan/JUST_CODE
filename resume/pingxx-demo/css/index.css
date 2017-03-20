@@ -118,12 +118,13 @@ li {
     padding: 10px;
     background-color: #ffffff;
 }
+
 .nav-right li:hover .drop-list {
     display: block;
 }
 
-
 /*home*/
+
 .home {
     height: 100%;
     min-height: 715px;
@@ -157,39 +158,42 @@ li {
         top:0;
     }
     3%{
-        top:-145px;
+        top:-150px;
     }
     20%{
-        top:-145px;
+        top:-150px;
     }
     23%{
-        top: -290px;
+        top: -300px;
     }
     40%{
-        top: -290px;
+        top: -300px;
     }
     43%{
-        top: -435px;
+        top: -450px;
     }
     60%{
-        top: -435px;
+        top: -450px;
     }
     63%{
-        top: -580px;
+        top: -600px;
     }
     80%{
-        top: -580px;
+        top: -600px;
     }
     83%{
-        top: -725px;
+        top: -750px;
     }
     100%{
-        top: -725px;
+        top: -750px;
     }
 }
 
+.home .home-left .home-left-top li{
+    height: 150px;
+}
+
 .home .home-left .home-left-top h1 {
-    line-height: 75px;
     font-size: 54px;
     font-weight: 200;
 }
