@@ -6,8 +6,9 @@
     box-sizing: border-box;
 }
 
-body{
+html,body{
     background-color: #FAFAFA;
+    height: 100%;
 }
 
 a {
@@ -37,7 +38,7 @@ li {
 
 /*header*/
 #header {
-    height: 100vh;
+    height: 100%;
 }
 
 .nav {
@@ -114,7 +115,7 @@ li {
     border-radius: 2px;
     box-shadow: 0 5px 10px 0 #eee;
     padding: 10px;
-
+    background-color: #ffffff;
 }
 .nav-right li:hover .drop-list {
     display: block;
@@ -123,14 +124,18 @@ li {
 
 /*home*/
 .home {
-    position: relative;
     height: 100%;
+    min-height: 715px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
+
+
 .home .home-left {
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    padding-left: 50px;
+    flex: 1;
+    padding-top: 150px;
+    padding-left: 200px;
 }
 
 .home .home-left .home-left-top {
@@ -215,10 +220,9 @@ li {
 
 
 .home .home-right {
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    padding-left: 800px;
+    flex: 1;
+    padding-top: 100px;
+    margin-left: 200px;
 }
 
 
@@ -842,10 +846,10 @@ li {
 
     font-size: 16px;
     display: inline-block;
-    height: 60px;
-    width: 100px;
+    height: 50px;
+    width: 120px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     border-radius: 28px;
     color: #fff;
     background-color: #35C8E6;
