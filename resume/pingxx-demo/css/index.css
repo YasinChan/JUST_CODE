@@ -214,6 +214,112 @@ li {
 }
 
 
+.home .home-right {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding-left: 800px;
+}
+
+
+
+.home-right .screen-top{
+    background: #ffffff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 50px;
+    width: 180px;
+    box-shadow: 2px -2px 2px rgba(204,204,204,0.3);
+    padding-top: 20px;
+}
+
+.home-right .screen-top .heng {
+    height:5px;
+    background-color: rgba(204,204,204,0.6);
+    border-radius: 3px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.home-right .screen-bottom {
+    background: #ffffff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 50px;
+    width: 180px;
+    box-shadow: 2px 2px 2px rgba(204,204,204,0.3);
+    padding-top: 10px;
+}
+
+.home-right .screen-bottom .yuan{
+    height: 30px;
+    width:30px;
+    border: 2px solid rgba(204,204,204,0.6);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.home-right .screen {
+    position: relative;
+    height: 294px;
+    width: 180px;
+    border-left: 11px solid #ffffff;
+    border-right: 11px solid #ffffff;
+    box-shadow: 2px 0 2px rgba(204,204,204,0.3);
+    overflow: hidden;
+}
+
+.home .home-right ul {
+    position: absolute;
+    left: 0;
+    width: 2000px;
+    animation: phone 15s linear infinite;
+}
+
+@keyframes phone {
+    0%{
+        left: 0;
+    }
+    10%{
+        left: -166px;
+    }
+    20%{
+        left: -166px;
+    }
+    30%{
+        left: -332px;
+    }
+    40%{
+        left: -332px;
+    }
+    50%{
+        left: -498px;
+    }
+    60%{
+        left: -498px;
+    }
+    70%{
+        left: -664px;
+    }
+    80%{
+        left: -664px;
+    }
+    90%{
+        left: -830px;
+    }
+    100%{
+        left: -830px;
+    }
+}
+
+.home .home-right ul li {
+    float: left;
+}
+
+.home .home-right ul li img{
+    height: 294px;
+    width: 166px;
+}
 
 
 
