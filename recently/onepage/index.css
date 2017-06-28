@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    font-family: 微软雅黑;
+    background: #fff;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+}
+
+#header {
+    height: 76px;
+    background: #fff;
+}
+
+#header .inbl {
+    display: inline-block;
+}
+
+#header .logo {
+    padding-left: 8px;
+}
+
+#header .xdf {
+    border-left: 1px solid rgb(176, 176, 176);
+    margin-left: 18px;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+
+#header .xdf p{
+    font-size: 17px;
+    color: rgb(176, 176, 176);
+}
+
+#header .xdf h1 {
+    font-size: 19px;
+    color: #000;
+}
+
+#header .xdf h2 {
+    font-size: 10px;
+    font-family: Arial Regular;
+    color: rgb(176, 176, 176);
+}
+
+#header .spokesman {
+    float: right;
+    padding-top: 18px;
+    padding-right: 150px;
+    font-size: 18px;
+    color: rgb(238, 120, 0);
+}
+
+#header .huangbo-wrap {
+    position: relative;;
+}
+
+#header .huangbo {
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+#classify .nav {
+    height: 45px;
+    background: rgb(238, 120, 0);
+}
+
+#classify .nav ul>li {
+    float: left;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+#classify .nav ul>li:not(:last-child):hover,#classify .nav ul>li.active {
+    background: #484848;
+}
+
+#classify .nav ul>li a {
+    color: #fff;
+}
+
+
+
+#classify .nav ul>li:nth-child(9) {
+    display: inline-block;
+    padding-left: 18px;
+    padding-top: 10px;
+    height: 45px;
+    width: 60px;
+    background: rgb(72, 72, 72);
+    margin-left: 35px;
+}
+
+#classify .nav ul>li:nth-child(10) {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#classify .pic {
+    position: relative;
+    height: 240px;
+    background: #DBDBDB;
+}
+
+#classify .pic img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#classify .type ul {
+    display: flex;
+    margin-top: 32px;
+}
+
+#classify .type ul>li {
+    text-align: center;
+    flex: 1;
+}
+
+#classify .type ul>li p {
+    padding-top: 17px;
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+}
+
+#content {
+    margin-top: 40px;
+}
+
+#content .content {
+    display: flex;
+}
+
+#content .content .aside {
+    flex: 9;
+}
+
+#content .content .main {
+    flex: 31;
+}
+
+/*aside 部分*/
+
+#content .content .aside .vc {
+    height: 100px;
+    width:240px;
+    background: rgb(238, 120, 0);
+    text-align: center;
+    line-height: 100px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#content .content .aside .vc-classify {
+    width: 240px;
+}
+
+#content .content .aside .vc-classify ul>li {
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 36px;
+    background: #F2F2F2;
+    transition: border 0.5s,background-color 0.5s;
+}
+
+#content .content .aside .vc-classify ul>li:hover {
+    background-color: #fff;
+    background: url("images/dot.jpg") no-repeat 26px 18px;
+    border-right: 5px solid #EF7800;
+}
+
+#content .content .aside .vc-classify ul>li:hover a {
+    color: #EF7800;
+}
+
+#content .content .aside .vc-classify ul>li a {
+    color: rgb(102,102,102);
+}
+
+
+/*main 部分*/
+#content .content .main .main-nav {
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+
+#content .content .main .main-nav .zaixian {
+    color: red;
+}
+
+#content .content .main .hr {
+    margin-top: 30px;
+    border-top: 1px solid #DCDCDC;
+}
+
+#content .content .main .news .first .picture {
+    float: left;
+    padding-top: 18px;
+    padding-right: 18px;
+    position: relative;
+}
+
+/*魅力校园、实训教学、名师讲堂*/
+
+#content .content .main .news .meili .picture,
+#content .content .main .news .shixun .picture,
+#content .content .main .news .mingshi .picture  {
+    float: left;
+    padding-top: 18px;
+    padding-right: 18px;
+    position: relative;
+}
+
+/*在线体验、品牌活动、美食推荐*/
+#content .content .main .news .zaixian,
+#content .content .main .news .pinpai,
+#content .content .main .news .meishi {
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+#content .content .main .news .zaixian .food,
+#content .content .main .news .pinpai .food,
+#content .content .main .news .meishi .food {
+    flex: 1;
+}
+
+#content .content .main .news .zaixian .food:not(:first-child),
+#content .content .main .news .pinpai .food:not(:first-child),
+#content .content .main .news .meishi .food:not(:first-child){
+    margin-left: 18px;
+}
+
+#content .content .main .news .zaixian .food .introduce,
+#content .content .main .news .pinpai .food .introduce,
+#content .content .main .news .meishi .food .introduce{
+    height: 80px;
+    width: 218px;
+    background: #F5F5F5;
+    margin-top: -5px;
+}
+
+#content .content .main .news .zaixian .food h1,
+#content .content .main .news .pinpai .food h1,
+#content .content .main .news .meishi .food h1{
+    font-size: 14px;
+    padding: 10px;
+    color: #666666;
+}
+
+#content .content .main .news .zaixian .food p,
+#content .content .main .news .pinpai .food p,
+#content .content .main .news .meishi .food p{
+    padding: 0 10px;
+    font-size: 12px;
+    font-family:宋体;
+}
+
+#content .content .main .news .zaixian .food p img,
+#content .content .main .news .pinpai .food p img,
+#content .content .main .news .meishi .food p img{
+    padding-right: 10px;
+}
+
+#content .content .main .news .zaixian .food p span,
+#content .content .main .news .pinpai .food p span,
+#content .content .main .news .meishi .food p span{
+    padding-left: 20px;
+}
+
+
+
+
+/*main 部分布局*/
+
+#content .content .main .news .all .picture .cover {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#content .content .main .news .all .picture .cover-big h2{
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+#content .content .main .news .all .picture .cover-big p {
+    font-size: 12px;
+    font-family:宋体;
+}
+
+#content .content .main .news .all .picture .cover-big img {
+    padding-right: 10px;
+}
+
+#content .content .main .news .all .picture .cover-big p span {
+    padding-left: 20px;
+}
+
+#content .content .main .news .all .picture:nth-child(3),#content .content .main .news .all .picture:nth-child(5),#content .content .main .news .all .picture:nth-child(9) {
+    padding-right: 0;
+}
+
+#content .content .main .news .lab {
+    position: relative;
+    margin-top: 34px;
+}
+
+#content .content .main .news .lab .lab-left {
+    height: 34px;
+    width: 100px;
+    background: rgb(238, 120, 0);
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    font-family:宋体;
+}
+
+#content .content .main .news .lab .more {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 14px;
+    font-family:宋体;
+}
+
+#content .content .main .news .lab .more span {
+    padding-right: 5px;
+}
+
+.picture{
+    display: inline;
+}
+
+/*footer 部分*/
+#footer {
+    margin-top: 80px;
+}
+
+#footer .info {
+    text-align: center;
+}
+
+#footer .info .contact {
+    margin-top: -6px;
+    background: #EF7800;
+}
+
+#footer .info .contact .mobile,#footer .info .contact .position {
+    display: inline-block;
+    font-size: 12px;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+}
+
+#footer .intr {
+    height: 180px;
+    background: #484848;
+}
+
+#footer .intr h1 {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+}
+
+#footer .intr p {
+    font-size: 12px;
+    color: #898787;
+    padding-top: 7px;
+}
+
+#footer .intr .footer-logo,
+#footer .intr .zhuanye,
+#footer .intr .school,
+#footer .intr .jiuye,
+#footer .intr .baoming,
+#footer .intr .erweima {
+    display: inline-block;
+    vertical-align:text-top;
+}
+
+#footer .intr .footer-logo {
+    padding-top: 52px;
+    padding-left: 36px;
+}
+
+#footer .intr .zhuanye,
+#footer .intr .school,
+#footer .intr .jiuye {
+    text-align: center;
+    margin-top: 32px;
+}
+
+#footer .intr .zhuanye {
+    border-left: 2px solid #5A5959;
+    margin-left: 56px;
+    padding-left: 48px;
+}
+
+#footer .intr .school {
+    padding-left: 88px;
+}
+
+#footer .intr .jiuye {
+    padding-left: 94px;
+}
+
+#footer .intr .baoming {
+    margin-left: 68px;
+    border-left: 2px solid #5A5959;
+    padding-left: 46px;
+    margin-top: 26px;
+}
+
+#footer .intr .baoming p {
+    font-size: 12px;
+    color: #fff;
+}
+
+#footer .intr .baoming .num {
+    color: #EF7800;
+    font-size: 12px;
+}
+
+#footer .intr .baoming span{
+    font-size: 14px;
+    color: #fff;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+#footer .intr .erweima {
+    margin-left: 44px;
+    border-left: 2px solid #5A5959;
+    padding-left: 46px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+#footer .intr .erweima p{
+	color: #fff;
+}
+
+#footer .foot {
+    height: 46px;
+    background: #393939;
+    text-align: center;
+    line-height: 46px;
+}
+
+#footer .foot p {
+    font-size: 12px;
+    font-family: Arial Regular;
+    color: #898787;
+}
+
+
+/*fixde 部分*/
+#fixed {
+    position: fixed;
+    top: 200px;
+    right: 100px;
+}
+
+#fixed p {
+    font-size: 12px;
+    font-family: 宋体;
+    color: #fff;
+}
+
+#fixed>div {
+    height: 54px;
+    width: 54px;
+    background: #EF7800;
+    text-align: center;
+}
+
+#fixed>div img {
+    padding-top: 8px;
+}
+
+#fixed>div:not(:first-child) {
+    margin-top: 1px;
+}
+
+#fixed>div:first-child {
+    background: #484848;
+}
+
+#fixed>div:last-child {
+    margin-top: 5px;
+    background: #484848;
+}
